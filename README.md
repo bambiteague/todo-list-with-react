@@ -1,3 +1,6 @@
+*This is just a note to myself to come back and rework this readme when the project is done to give credits to the youtuber I followed along with while coding, etc*
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
