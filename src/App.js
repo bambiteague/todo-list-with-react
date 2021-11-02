@@ -1,4 +1,6 @@
 import "./App.css";
+//importing components-->
+import Form from "./components/Form"
 
 function App() {
   return (
@@ -6,6 +8,7 @@ function App() {
       <header>
         <h1>Bambi's Todo List</h1>
       </header>
+        <Form />
     </div>
   );
 }
