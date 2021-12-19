@@ -13,9 +13,7 @@ const Form = ({ setInputText, todos, setTodos, inputText, setStatus }) => {
     //would want to use a package to handle the id setting instead on Math in an up and running application!!
     setInputText("");
   };
-  const statusHandler = (e) => {
-    setStatus(e.target.value);
-  };
+
   return (
     <form>
       <input
@@ -28,10 +26,14 @@ const Form = ({ setInputText, todos, setTodos, inputText, setStatus }) => {
         <i className="fas fa-plus-square"></i>
       </button>
       <div className="select">
-        <select onChange={statusHandler} name="todos" className="filter-todo">
+        <select
+          onChange={(e) => setStatus(e.target.value)}
+          name="todos"
+          className="filter-todo"
+        >
           <option value="all">All</option>
           <option value="completed">Completed</option>
-          <option value="incomplete">Incomplete</option>
+          <option value="incompleted">Incompleted</option>
         </select>
       </div>
     </form>
