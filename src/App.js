@@ -26,8 +26,6 @@ function App() {
     }
   }, [todos, status]);
 
-console.log(todos)
-
   return (
     <div className="App">
       <header>
