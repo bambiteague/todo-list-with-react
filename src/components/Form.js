@@ -1,9 +1,7 @@
 import React from "react";
 
 const Form = ({ setInputText, todos, setTodos, inputText, setStatus }) => {
-  const inputTextHandler = (e) => {
-    setInputText(e.target.value);
-  };
+
   const submitTodoHandler = (e) => {
     e.preventDefault();
     setTodos([
@@ -14,11 +12,14 @@ const Form = ({ setInputText, todos, setTodos, inputText, setStatus }) => {
     setInputText("");
   };
 
+
   return (
     <form>
       <input
         value={inputText}
-        onChange={inputTextHandler}
+        onChange={(e) => 
+          setInputText(e.target.value)
+        }
         type="text"
         className="todo-input"
       />
